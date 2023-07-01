@@ -189,9 +189,9 @@ body {
 
     text-align: left;
 
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    background-color: #F6F5EE;
+    /* background-color: #F6F5EE; */
 }
 
 .container-how-content {
@@ -200,22 +200,261 @@ body {
     gap: 36px;
 }
 
-.above-how-content > #how-header {
+.above-how-content {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how-above-left > #how-header {
     color: #222;
     font-size: 2.5em;
     font-family: Poppins;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    margin-bottom: 1%;
 }
 
+.how-above-left > #how-text {
+    color: rgba(34, 34, 34, 0.80);
+    font-size: .9em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 50%;
+
+    margin-bottom: 2%;
+}
+
+.how-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .how-button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .how-button svg path {
+    transition: 400ms;
+  }
+  
+  .how-button:hover {
+    background-color: transparent;
+  }
+  
+  .how-button:hover .text {
+    color: #181717;
+  }
+  
+  .how-button:hover svg path {
+    fill: #181717;
+  }
+
+/* How card 1 */
 .container-how-card {
     display: flex;
     
     align-items: center;
     justify-content: space-between;
 }
+.container-how-card > .how-card1 {
+    width: 260px;
+    height: 390px;
 
+    border-radius: 8px;
+    background-color: #FFF;
+
+    box-shadow: 2px 2px 8px 0px rgba(34, 34, 34, 0.08), -2px -2px 9px 0px rgba(34, 34, 34, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-card1 > #how-card-number {
+    color: #222;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.how-card1 > #how-card-image {
+    height: 50%;
+    width: 89%;
+}
+.how-card1 > #how-card-header {
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    width: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+.how-card1 > #how-card-text {
+    color: rgba(34, 34, 34, 0.80);
+    text-align: center;
+    font-size: .8em;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+
+    margin-bottom: 5%;
+}
+/* How card 2 */
+.container-how-card > .how-card2 {
+    width: 260px;
+    height: 390px;
+
+    border-radius: 8px;
+    background-color: #FFF;
+
+    box-shadow: 2px 2px 8px 0px rgba(34, 34, 34, 0.08), -2px -2px 9px 0px rgba(34, 34, 34, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-card2 > #how-card-number {
+    color: #222;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.how-card2 > #how-card-image {
+    height: 50%;
+    width: 89%;
+}
+.how-card2 > #how-card-header {
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    width: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+.how-card2 > #how-card-text {
+    color: rgba(34, 34, 34, 0.80);
+    text-align: center;
+    font-size: .8em;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+
+    margin-bottom: 5%;
+}
+/* How card 3 */
+.container-how-card > .how-card3 {
+    width: 260px;
+    height: 390px;
+
+    border-radius: 8px;
+    background-color: #FFF;
+
+    box-shadow: 2px 2px 8px 0px rgba(34, 34, 34, 0.08), -2px -2px 9px 0px rgba(34, 34, 34, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.how-card3 > #how-card-number {
+    color: #222;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.how-card3 > #how-card-image {
+    height: 50%;
+    width: 89%;
+}
+.how-card3 > #how-card-header {
+    color: #222;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+    width: 100%;
+
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+}
+.how-card3 > #how-card-text {
+    color: rgba(34, 34, 34, 0.80);
+    text-align: center;
+    font-size: .8em;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+
+    margin-bottom: 5%;
+}
 
 
 
@@ -227,7 +466,7 @@ body {
 
 
 /* ASK */
-/* .container-ask {
+.container-ask {
     display: flex;
 
     height: max-content;
@@ -363,6 +602,6 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-} */
+}
 /* ASK END */
 
